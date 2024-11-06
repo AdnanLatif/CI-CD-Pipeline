@@ -6,6 +6,12 @@ app.get('/', (req, res) => {
   res.send('Hello, World from the backend!');
 });
 
-app.listen(PORT, () => {
-  console.log(`Server is running on port ${PORT}`);
-});
+// Export the app for testing purposes
+module.exports = app;
+
+if (require.main === module) {
+  // Only start the server if it's run directly (not when required for tests)
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+}

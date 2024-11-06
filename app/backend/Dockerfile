@@ -1,17 +1,12 @@
-FROM node:lts
+FROM node:lts as build
 
-WORKDIR /app/frontend
+WORKDIR /app/backend
 
-COPY frontend/package.json ./
+COPY backend/package.json ./
 RUN npm install
 
-COPY frontend/ .
+COPY backend/ .
 
-RUN npm run build
+EXPOSE 3000
 
-FROM nginx:alpine
-COPY --from=0 /app/frontend/build /usr/share/nginx/html
-
-EXPOSE 80
-
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["node", "src/index.js"]
