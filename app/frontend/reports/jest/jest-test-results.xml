@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuites name="vitest tests" tests="2" failures="2" errors="0" time="1.833">
+    <testsuite name="src/App.test.jsx" timestamp="2024-11-06T11:25:18.481Z" hostname="eng-tk-lpt-0626" tests="2" failures="2" errors="0" skipped="0" time="0.0957956">
+        <testcase classname="src/App.test.jsx" name="App Component &gt; renders the App component with welcome text" time="0.0479103">
+            <failure message="Invalid Chai property: toBeInTheDocument" type="Error">
+Error: Invalid Chai property: toBeInTheDocument
+ ❯ src/App.test.jsx:15:23
+            </failure>
+        </testcase>
+        <testcase classname="src/App.test.jsx" name="App Component &gt; increments counter on button click" time="0.0461465">
+            <failure message="Invalid Chai property: toHaveTextContent" type="Error">
+Error: Invalid Chai property: toHaveTextContent
+ ❯ src/App.test.jsx:24:18
+            </failure>
+        </testcase>
+    </testsuite>
+</testsuites>
