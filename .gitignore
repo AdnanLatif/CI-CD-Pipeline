@@ -2,6 +2,7 @@
 
 # dependencies
 /app/frontend/node_modules
+/app/frontend-old/node_modules
 /app/backend/node_modules
 
 /.pnp
