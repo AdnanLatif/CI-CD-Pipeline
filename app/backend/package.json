@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node src/index.js",
-    "test": "jest --coverage",
+    "test": "jest --coverage --verbose",
     "sonar": "sonar-scanner"
   },
   "keywords": [],
