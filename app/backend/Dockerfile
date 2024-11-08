@@ -14,7 +14,7 @@ COPY . .
 RUN npm test  # Alternatively, use `RUN npx jest --verbose` if needed
 
 # Stage 2: Final image with only the application code and dependencies
-FROM node:lts
+FROM node:lts-alpine
 
 WORKDIR /app/backend
 
