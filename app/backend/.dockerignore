@@ -1,23 +1,19 @@
-# Ignore frontend and old directories
-../frontend/node_modules
-../frontend-old/node_modules
-
-../frontend/coverage
-../frontend-old/coverage
-
-../frontend/build
-../frontend-old/build
-
-# Ignore unnecessary files and directories in backend
+# Ignore node_modules, build artifacts, and test/coverage folders
 node_modules
 coverage
 build
 
-# General ignores
+# Ignore environment files
+.env
+.env.local
+.env.*.local
+
+# Ignore version control and logs
 .git
-*.md
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+# Other unnecessary or sensitive files
 .DS_Store
-.env*
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+*.md
