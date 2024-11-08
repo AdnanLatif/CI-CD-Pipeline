@@ -1,4 +1,5 @@
-FROM node:lts
+# Stage 1: Build and install dependencies in a lightweight way
+FROM node:lts-alpine AS build
 
 WORKDIR /app/frontend
 
